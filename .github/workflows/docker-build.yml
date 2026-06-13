@@ -17,4 +17,7 @@ jobs:
         run: docker build -t webserver ./webserver
 
       - name: Run container
-        run: docker run webserver
+        run: docker run -d -p 8080:80 webserver
+
+      - name: Check container is running
+        run: docker ps
