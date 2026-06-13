@@ -21,3 +21,6 @@ jobs:
 
       - name: Check container is running
         run: docker ps
+
+      - name: List Docker images
+        run: docker images
